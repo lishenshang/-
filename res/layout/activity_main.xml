@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1E0EF"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/id_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D1E0EF"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        
+         <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        
+            
+            <Spinner 
+                android:id="@+id/id_languagetranslation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+             <Button 
+                android:id="@+id/id_translation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="翻译->"
+                />
+        </LinearLayout>
+            
+           
+            
+      
+        
+        <FrameLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D1E0EF"
+            >
+              <EditText 
+            android:id="@+id/id_translatecontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:background="#D1E0EF"
+            />
+            <ImageButton 
+            android:id="@+id/id_clearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_ic_clear_mtrl_alpha"
+            android:layout_gravity="right|bottom"
+            />
+        
+       
+            </FrameLayout>
+        
+        
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#ffffff" />
+    
+    <LinearLayout
+        android:id="@+id/id_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        
+        <RelativeLayout 
+            android:id="@+id/id_yiwen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F6F7F9"
+            android:visibility="gone"
+            >
+            
+            <TextView 
+                android:id="@+id/id_yiwen1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="译文"
+                />
+            
+            <TextView 
+                android:id="@+id/id_yiwen2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_yiwen1"
+                />
+            
+            <LinearLayout 
+                android:id="@+id/id_moveyiwen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/id_yiwen2"
+                android:orientation="vertical"
+                >
+                
+                <TextView 
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="更多释义"
+                    />
+                
+                <TextView 
+                    android:id="@+id/id_movetext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+                
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+        <ListView 
+            android:id="@+id/id_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            ></ListView>
+        
+    </LinearLayout>
+
+</LinearLayout>
